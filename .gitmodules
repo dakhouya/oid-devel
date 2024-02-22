@@ -1,0 +1,3 @@
+[submodule "src/OpenImageDebugger"]
+	path = src/OpenImageDebugger
+	url = git@github.com:dakhouya/OpenImageDebugger.git

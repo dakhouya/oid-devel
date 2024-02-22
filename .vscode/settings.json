@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "/workspaces/oid-devel/",
+    "files.associations": {
+        "new": "cpp"
+    }
+}

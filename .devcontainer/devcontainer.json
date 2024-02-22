@@ -1,0 +1,16 @@
+{
+	"name": "Ubuntu",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [ "ms-vscode.cpptools-extension-pack" ]
+		}
+	},
+	"runArgs": [
+		"--gpus", "all",
+		"--net=host"
+	],
+	"postCreateCommand": "git -C ./src/OpenImageDebugger submodule update --init"
+}
