@@ -15,6 +15,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -28,9 +29,23 @@
                 },
                 {
                     "description": "Load oid.py script",
-                    "text": "source ${workspaceFolder}/out/install/configure-debug/OpenImageDebugger/oid.py",
+                    "text": "source ${workspaceFolder}/out/install/gcc-debug/OpenImageDebugger/oid.py",
                     "ignoreFailures": true
                 }
+            ]
+        },
+        {
+            "name": "(lldb) Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${command:cmake.launchTargetPath}",
+            "args": [],
+            "cwd": "${fileDirname}",
+            "initCommands":[
+                "settings set target.disable-aslr false",
+            ],
+            "preRunCommands": [
+                "command script import ${workspaceFolder}/out/install/clang-debug/OpenImageDebugger/oid.py"
             ]
         }
 

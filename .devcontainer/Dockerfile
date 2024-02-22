@@ -3,8 +3,10 @@ FROM mcr.microsoft.com/devcontainers/base:jammy
 # Development tools
 RUN apt update && apt install -y --no-install-recommends \
     build-essential \
+    clang \
     cmake \
     gdb-multiarch \
+    lldb \
     libopencv-dev \
     ninja-build \
     python3-opencv \
