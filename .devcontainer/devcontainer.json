@@ -7,9 +7,9 @@
 		"vscode": {
 			"extensions": [
 				"ms-vscode.cpptools-extension-pack",
-				"vadimcn.vscode-lldb"
+				"vadimcn.vscode-lldb",
 				"ms-python.python",
-				"ms-python.vscode-pylance"
+				"eamodio.gitlens"
 			]
 		}
 	},
