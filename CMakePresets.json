@@ -34,13 +34,15 @@
             "name": "gcc-build-debug",
             "displayName": "GCC 11.4.0 x86_64-linux-gnu",
             "configurePreset": "gcc-debug",
-            "description": "GCC 11.4.0 x86_64-linux-gnu build"
+            "description": "GCC 11.4.0 x86_64-linux-gnu build",
+            "targets": ["all", "install"]
         },
         {
             "name": "clang-build-debug",
             "displayName": "Clang 14.0.0 x86_64-pc-linux-gnu",
             "configurePreset": "clang-debug",
-            "description": "Clang 14.0.0 x86_64-pc-linux-gnu build"
+            "description": "Clang 14.0.0 x86_64-pc-linux-gnu build",
+            "targets": ["all", "install"]
         }
     ]
 }
