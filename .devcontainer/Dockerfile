@@ -1,15 +1,19 @@
-FROM mcr.microsoft.com/devcontainers/base:jammy
+FROM mcr.microsoft.com/devcontainers/base:noble
 
 # Development tools
 RUN apt update && apt install -y --no-install-recommends \
     build-essential \
     clang \
+    clang-format-18 \
     cmake \
     gdb-multiarch \
     lldb \
     libopencv-dev \
     ninja-build \
     python3-opencv \
+    # symlinks \
+    && ln -s /usr/bin/clang-format-18 /usr/bin/clang-format \
+    && ln -s /usr/bin/git-clang-format-18 /usr/bin/git-clang-format \
     # Cleanup
     && rm -rf /var/lib/apt/lists/*
 
